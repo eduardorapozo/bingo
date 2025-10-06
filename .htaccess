@@ -1,0 +1,12 @@
+# Ativa o módulo de reescrita de URL
+RewriteEngine On
+RewriteBase /
+
+# 1. Ocultar a extensão .php (ex: /pagina.php passa a ser /pagina)
+# Verifica se o arquivo .php existe no servidor
+RewriteCond %{REQUEST_FILENAME}.php -f
+# Se existir, reescreve a URL para incluir o .php internamente
+RewriteRule ^([^\.]+)$ $1.php [L]
+
+# 2. Página de erro 404 customizada
+ErrorDocument 404 /404.html

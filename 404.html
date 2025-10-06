@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página Não Encontrada</title>
+    <style>
+        /* Estilos globais: Reset e fontes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            /* Fundo preto e texto branco */
+            background-color: #111; /* Preto escuro */
+            color: #DDD; /* Branco suave/cinza claro para o texto */
+        }
+
+        /* Estilo para o conteúdo principal */
+        .container {
+            max-width: 600px;
+            padding: 30px;
+            border: 1px solid #333; /* Borda cinza escura */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background-color: #222; /* Fundo do container um pouco mais claro que o body */
+        }
+
+        /* Estilo do número 404 */
+        h1 {
+            font-size: 8em; /* Número bem grande */
+            margin: 0;
+            color: #FFF; /* Branco puro para o número */
+            letter-spacing: 5px;
+            text-shadow: 3px 3px #000;
+        }
+
+        /* Estilo do cabeçalho secundário */
+        h2 {
+            font-size: 1.8em;
+            margin: 5px 0 20px 0;
+            color: #AAA; /* Cinza médio */
+            font-weight: normal;
+        }
+
+        /* Estilo para o link de retorno */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #FFF; /* Borda branca */
+            color: #FFF; /* Texto branco */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            /* Inversão de cores ao passar o mouse */
+            background-color: #FFF;
+            color: #111;
+        }
+
+        /* Mensagem de rodapé */
+        p {
+            font-size: 1em;
+            color: #777; /* Cinza escuro/suave */
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Página Não Encontrada</h2>
+        <p>A página que você está procurando pode ter sido removida, tido seu nome alterado ou está temporariamente indisponível.</p>
+        <a href="/">VOLTAR PARA A PÁGINA INICIAL</a>
+        <p>Se o problema persistir, entre em contato com o administrador do site.</p>
+    </div>
+</body>
+</html>
